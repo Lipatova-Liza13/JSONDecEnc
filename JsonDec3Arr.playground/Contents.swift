@@ -33,3 +33,4 @@ let response = try! JSONDecoder().decode(Response.self, from: jsonData)
 for user in response.users {
     print(user.first_name)
 }
+print (response.users[0].first_name)
